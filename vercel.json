@@ -1,32 +1,6 @@
 {
-    "buildCommand": "",
-    "outputDirectory": "",
-    "installCommand": "",
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "/healthcare-training-center/project/export/src/Learner%20App.html",
-            "permanent": false
-        }
-    ],
-    "headers": [
-        {
-            "source": "/healthcare-training-center/project/export/src/(.*)",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=3600, s-maxage=86400"
-                }
-            ]
-        },
-        {
-            "source": "/(.*).html",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=300, s-maxage=3600"
-                }
-            ]
-        }
-    ]
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true
 }
